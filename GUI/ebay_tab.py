@@ -42,10 +42,10 @@ class EbayTabFrame(tk.Frame):
           price_label = Label(frame, text = f"Price: \n{value[0]}\n")
           price_label.pack()
           
-          link_label = Label(frame, text = f"Link: \n{value[1]}", cursor='hand2', fg="blue")
+          link_label = Label(frame, text = "Click here for link", cursor='hand2', fg="blue")
           link_label.pack()
           link_label.bind("<Button-1>", lambda e, specific_url=f"{value[1]}": webbrowser.open_new(specific_url))
-          
+        #   url = value[2]
           img = ImageTk.PhotoImage(file=urlopen(value[2]))
           image_label = ttk.Label(frame, image=img)
           image_label.image = img
