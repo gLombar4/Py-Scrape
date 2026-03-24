@@ -1,15 +1,13 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 class web_driver:
   def __init__(self):
+    print("Starting web browser...")
     options = Options()
-    # options.add_argument("--headless=new")
+    options.add_argument("--headless=new")
     options.page_load_strategy = 'normal'
     self.driver = webdriver.Firefox(options=options)
+    print("Web browser session started.")
     
   
   def get_driver(self):

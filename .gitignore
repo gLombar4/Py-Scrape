@@ -3,8 +3,8 @@
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
-GUI/__pycache__/
-Scrapers/__pycache__/
+__pycache__/
+__pycache__/
 *.py[cod]
 *$py.class
 
@@ -15,7 +15,7 @@ Scrapers/__pycache__/
 .Python
 build/
 develop-eggs/
-dist/
+**dist/
 downloads/
 eggs/
 .eggs/
